@@ -7,6 +7,7 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
+dotenv.load_dotenv()
 token = os.getenv('TOKEN')
 host = os.getenv('RM_HOST')
 port = os.getenv('RM_PORT')
@@ -17,7 +18,6 @@ db_password = os.getenv('DB_PASSWORD')
 db_host = os.getenv('DB_HOST')
 db_port = os.getenv('DB_PORT')
 database = os.getenv('DB_DATABASE')
-
 
 # Настройка логирования
 logging.basicConfig(filename='bot.log', level=logging.INFO,
