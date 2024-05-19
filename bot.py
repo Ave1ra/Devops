@@ -7,7 +7,6 @@ from dotenv import load_dotenv
 from telegram import Update
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters, CallbackContext
 
-dotenv.load_dotenv()
 token = os.getenv('TOKEN')
 host = os.getenv('RM_HOST')
 port = os.getenv('RM_PORT')
