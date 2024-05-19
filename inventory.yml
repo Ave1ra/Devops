@@ -1,0 +1,27 @@
+all:
+  hosts:
+    ansible1:
+      ansible_user: ansible
+      ansible_ssh_pass: ansible
+      ansible_host: 192.168.1.8
+
+    ansible2:
+      ansible_user: ansible
+      ansible_ssh_pass: ansible
+      ansible_host: 192.168.1.7
+
+  vars:
+    DB_REPL_HOST: 192.168.1.7
+    DB_REPL_USER: repl_user
+    DB_REPL_PASSWORD: Qq12345
+    DB_REPL_PORT: 5432
+    DB_HOST: 192.168.1.8
+    DB_PORT: 5432
+    DB_USER: postgres
+    DB_PASSWORD: Qq12345
+    DB_DATABASE: test
+    TOKEN: #token in notion
+    RM_HOST: 192.168.1.8
+    RM_PORT: 22
+    RM_USER: ansible
+    RM_PASSWORD: ansible
